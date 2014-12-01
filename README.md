@@ -3,15 +3,20 @@ Black-Jack
 
 Projet Black Jack, jeu sur terminal.
 
+
+
 Lamniy Youssef
 
 Hajir Mohammed Amine
 
 Oukache Ayas
 
+
+
 Importation du projet
 
 git clone https://github.com/Youss7/Black-Jack; cd Black-Jack
+
 
 Compilation du projet
 
