@@ -8,6 +8,7 @@
  * */
 
 
+
 int main()
 {
 	//test pour l'affichage du tableau de cartes : void affiche_tab(short mat[52])
