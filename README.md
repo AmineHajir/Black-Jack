@@ -5,11 +5,11 @@ Projet Black Jack, jeu sur terminal.
 
 
 
-Lamniy Youssef
+-Lamniy Youssef
 
-Hajir Mohammed Amine
+-Hajir Mohammed Amine
 
-Oukache Ayas
+-Oukache Ayas
 
 
 
