@@ -22,4 +22,5 @@ la commande make debug permet de déboguer le projet
 la commande docgen générera la documentation (accessible via le fichier doc/html/index.html)
 
 
+
 Le doxyfile à été généré avec la dernière version de Doxygen, des erreurs peuvent donc apparaître lors de la génération de la documentation sur un ordinateur possèdant une version plus ancienne de Doxygen.
