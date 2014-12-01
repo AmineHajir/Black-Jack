@@ -1,0 +1,136 @@
+\hypertarget{fonction_8c}{\section{\-Référence du fichier fonction.\-c}
+\label{fonction_8c}\index{fonction.\-c@{fonction.\-c}}
+}
+
+
+ce fichier source contient les définitions des fonctions qui seront appelés par le programme principale situé dans le fichier source \hyperlink{bj_8c}{bj.\-c}  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\*
+{\ttfamily \#include $<$time.\-h$>$}\*
+{\ttfamily \#include \char`\"{}fonction.\-h\char`\"{}}\*
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fonction_8c_a56b4a6ba9704b104538baa55132a7eb5}{affiche\-\_\-tab} (short mat\mbox{[}52\mbox{]})
+\begin{DoxyCompactList}\small\item\em procédure qui affiche le tableau cartes \end{DoxyCompactList}\item 
+short \hyperlink{fonction_8c_a77c7f36cb1e69095e9014759aad8d94c}{tirer\-\_\-carte} (short player)
+\begin{DoxyCompactList}\small\item\em cette fonction tire aléatoirement un entier entre 0 et 51 qui correspond à une carte \end{DoxyCompactList}\item 
+void \hyperlink{fonction_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}{afficher\-\_\-carte} (short num)
+\begin{DoxyCompactList}\small\item\em procédure qui affiche la valeur et la couleur d'une carte à partir de son positionnement dans le tableau cartes \end{DoxyCompactList}\item 
+void \hyperlink{fonction_8c_a4e45c4378ccb34b5c5db0ec341317dc4}{afficher\-\_\-mains} (short player)
+\begin{DoxyCompactList}\small\item\em procédure qui affiche la main d'un joueur ( banque ou joueur ) passé en paramètre sans afficher la carte cahée de la banque \end{DoxyCompactList}\item 
+\hypertarget{fonction_8c_abc2d6eef3df10ba4785398dc43a03d60}{void \hyperlink{fonction_8c_abc2d6eef3df10ba4785398dc43a03d60}{afficher\-\_\-mains\-\_\-cachee} ()}\label{fonction_8c_abc2d6eef3df10ba4785398dc43a03d60}
+
+\begin{DoxyCompactList}\small\item\em procédure qui affiche la main de la banque y compris la mains cachée \end{DoxyCompactList}\item 
+short \hyperlink{fonction_8c_a288bf9aa7e231c3aca622c2860219941}{donner\-\_\-valeur\-\_\-carte} (short player, short carte, short score)
+\item 
+short \hyperlink{fonction_8c_a4a20e33a58c74c84a6793208be3bc5d1}{evaluer\-\_\-score} (short player, short carte\-\_\-recue, short $\ast$score)
+\begin{DoxyCompactList}\small\item\em fonction qui met à jour le score du joueur ( banque ou joueur ) passé en paramètre en fonction de la carte reçue \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+ce fichier source contient les définitions des fonctions qui seront appelés par le programme principale situé dans le fichier source \hyperlink{bj_8c}{bj.\-c} 
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{fonction_8c_a56b4a6ba9704b104538baa55132a7eb5}{\index{fonction.\-c@{fonction.\-c}!affiche\-\_\-tab@{affiche\-\_\-tab}}
+\index{affiche\-\_\-tab@{affiche\-\_\-tab}!fonction.c@{fonction.\-c}}
+\subsubsection[{affiche\-\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf affiche\-\_\-tab} (
+\begin{DoxyParamCaption}
+\item[{short}]{mat\mbox{[}52\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_a56b4a6ba9704b104538baa55132a7eb5}
+
+
+procédure qui affiche le tableau cartes 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em mat\mbox{[}52\mbox{]}} & tableau cartes à 52 cases \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonction_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}{\index{fonction.\-c@{fonction.\-c}!afficher\-\_\-carte@{afficher\-\_\-carte}}
+\index{afficher\-\_\-carte@{afficher\-\_\-carte}!fonction.c@{fonction.\-c}}
+\subsubsection[{afficher\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf afficher\-\_\-carte} (
+\begin{DoxyParamCaption}
+\item[{short}]{num}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}
+
+
+procédure qui affiche la valeur et la couleur d'une carte à partir de son positionnement dans le tableau cartes 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em num} & numéro correspondant à une carte dans le tableau cartes \\
+\hline
+\end{DoxyParams}
+$<$ x reçoit le numéro de la carte ( compris entre 0 et 12 ) à afficher \hypertarget{fonction_8c_a4e45c4378ccb34b5c5db0ec341317dc4}{\index{fonction.\-c@{fonction.\-c}!afficher\-\_\-mains@{afficher\-\_\-mains}}
+\index{afficher\-\_\-mains@{afficher\-\_\-mains}!fonction.c@{fonction.\-c}}
+\subsubsection[{afficher\-\_\-mains}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf afficher\-\_\-mains} (
+\begin{DoxyParamCaption}
+\item[{short}]{player}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_a4e45c4378ccb34b5c5db0ec341317dc4}
+
+
+procédure qui affiche la main d'un joueur ( banque ou joueur ) passé en paramètre sans afficher la carte cahée de la banque 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em player} & le joueur dont on veut afficher la main \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonction_8c_a288bf9aa7e231c3aca622c2860219941}{\index{fonction.\-c@{fonction.\-c}!donner\-\_\-valeur\-\_\-carte@{donner\-\_\-valeur\-\_\-carte}}
+\index{donner\-\_\-valeur\-\_\-carte@{donner\-\_\-valeur\-\_\-carte}!fonction.c@{fonction.\-c}}
+\subsubsection[{donner\-\_\-valeur\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf donner\-\_\-valeur\-\_\-carte} (
+\begin{DoxyParamCaption}
+\item[{short}]{player, }
+\item[{short}]{carte, }
+\item[{short}]{score}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_a288bf9aa7e231c3aca622c2860219941}
+$<$ la variable x reçoit le numéro de la carte ( compris entre 0 et 12 ) pour laquelle on souahite attribuer une valeur \hypertarget{fonction_8c_a4a20e33a58c74c84a6793208be3bc5d1}{\index{fonction.\-c@{fonction.\-c}!evaluer\-\_\-score@{evaluer\-\_\-score}}
+\index{evaluer\-\_\-score@{evaluer\-\_\-score}!fonction.c@{fonction.\-c}}
+\subsubsection[{evaluer\-\_\-score}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf evaluer\-\_\-score} (
+\begin{DoxyParamCaption}
+\item[{short}]{player, }
+\item[{short}]{carte\-\_\-recue, }
+\item[{short $\ast$}]{score}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_a4a20e33a58c74c84a6793208be3bc5d1}
+
+
+fonction qui met à jour le score du joueur ( banque ou joueur ) passé en paramètre en fonction de la carte reçue 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em player} & joueur ( banque ou joueur ) pour lequel en mettra à jour le score \\
+\hline
+{\em carte\-\_\-reçue} & numéro qui représente une carte dans le tableau cartes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+le nouveau score du joueur 
+\end{DoxyReturn}
+\hypertarget{fonction_8c_a77c7f36cb1e69095e9014759aad8d94c}{\index{fonction.\-c@{fonction.\-c}!tirer\-\_\-carte@{tirer\-\_\-carte}}
+\index{tirer\-\_\-carte@{tirer\-\_\-carte}!fonction.c@{fonction.\-c}}
+\subsubsection[{tirer\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf tirer\-\_\-carte} (
+\begin{DoxyParamCaption}
+\item[{short}]{player}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_a77c7f36cb1e69095e9014759aad8d94c}
+
+
+cette fonction tire aléatoirement un entier entre 0 et 51 qui correspond à une carte 
+
+elle associe le player passé en paramètre (banque,joueur,banque\-\_\-cachee) à cette carte dans le tableau cartes 
+\begin{DoxyParams}{\-Paramètres}
+{\em player} & joueur qui sera associé à la carte tirée au hazard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+l'entier (ou la carte) tiré au hazard 
+\end{DoxyReturn}
+$<$variable qui va recevoir le numéro de la carte tirée aléatoirement 

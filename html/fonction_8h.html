@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>BLACK JACK: Référence du fichier fonction.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">BLACK JACK
+   
+   </div>
+   <div id="projectbrief">DOCUMENTATION DU PROJET BLACK JACK</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier fonction.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ce fichier d'en-tete contient les en-tete des fonctions définies dans le fichier source <a class="el" href="fonction_8c.html" title="ce fichier source contient les définitions des fonctions qui seront appelés par le programme principa...">fonction.c</a>  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="fonction_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a508cc209fbc99ea975d1c1ecb5f1c6fe">LIBRE</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">représente une carte qui n'a pas été tirée  <a href="#a508cc209fbc99ea975d1c1ecb5f1c6fe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#aa6a8403ad0170c8f0a3ccbb6f982f36d">BANQUE</a>&#160;&#160;&#160;1</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">représente une carte qui a été tirée par la banque et visible par le joueur  <a href="#aa6a8403ad0170c8f0a3ccbb6f982f36d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a7f907d351a198b9a0405ce45155625dc">JOUEUR</a>&#160;&#160;&#160;2</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">représente une carte qui a été tirée par le joueur  <a href="#a7f907d351a198b9a0405ce45155625dc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a06f74699ca6f213b3297382d27152578">BANQUE_CACHEE</a>&#160;&#160;&#160;3</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">représente une carte qui a été tirée par la banque et non visible par le joueur  <a href="#a06f74699ca6f213b3297382d27152578"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#ab3167868edabf23ce42007cfa46f0a34">DEB_COEURS</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">indice du début des cartes de couleur coeur  <a href="#ab3167868edabf23ce42007cfa46f0a34"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a907dc60a26479ff6bf53792573e4bafa">FIN_COEURS</a>&#160;&#160;&#160;12</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">indice de fin des cartes de couleur coeur  <a href="#a907dc60a26479ff6bf53792573e4bafa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#adaac26fcb2ef9b0c98dbcd70395f81d4">DEB_CARREAUX</a>&#160;&#160;&#160;13</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">indice du début des cartes de couleur carreaux  <a href="#adaac26fcb2ef9b0c98dbcd70395f81d4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a5e5f41c3b532ee5dbea0aa4abcad0c5c">FIN_CARREAUX</a>&#160;&#160;&#160;25</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">indice de fin des cartes de couleur carreaux  <a href="#a5e5f41c3b532ee5dbea0aa4abcad0c5c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#af174177234917e71a4ddc296b65bf836">DEB_PIQUES</a>&#160;&#160;&#160;26</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">indice du début des cartes de couleur piques  <a href="#af174177234917e71a4ddc296b65bf836"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a59b61abc1fe046e0165a739067b1854b">FIN_PIQUES</a>&#160;&#160;&#160;38</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">indice de fin des cartes de couleur piques  <a href="#a59b61abc1fe046e0165a739067b1854b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a776e9059fbac10978154260ee7ebfe08">DEB_TREFLES</a>&#160;&#160;&#160;39</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">indice du début des cartes de couleur trefles  <a href="#a776e9059fbac10978154260ee7ebfe08"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#aef89a2a14b5ec6b3999fed241935ca9d">FIN_TREFLES</a>&#160;&#160;&#160;51</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">indice de fin des cartes de couleur trefles  <a href="#aef89a2a14b5ec6b3999fed241935ca9d"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a77c7f36cb1e69095e9014759aad8d94c">tirer_carte</a> (short player)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">cette fonction tire aléatoirement un entier entre 0 et 51 qui correspond à une carte  <a href="#a77c7f36cb1e69095e9014759aad8d94c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a889d9fb67e023d6b9aaa5819f007529c">affiche_tab</a> (short mat[52])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">procédure qui affiche le tableau cartes  <a href="#a889d9fb67e023d6b9aaa5819f007529c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#aa59cf3010d2ca3d7dd3f9628e6a7bc72">afficher_carte</a> (short num)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">procédure qui affiche la valeur et la couleur d'une carte à partir de son positionnement dans le tableau cartes  <a href="#aa59cf3010d2ca3d7dd3f9628e6a7bc72"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a4e45c4378ccb34b5c5db0ec341317dc4">afficher_mains</a> (short player)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">procédure qui affiche la main d'un joueur ( banque ou joueur ) passé en paramètre sans afficher la carte cahée de la banque  <a href="#a4e45c4378ccb34b5c5db0ec341317dc4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf11c634273c349b6f9b2ce620938f32"></a><!-- doxytag: member="fonction.h::afficher_mains_cachee" ref="acf11c634273c349b6f9b2ce620938f32" args="(void)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#acf11c634273c349b6f9b2ce620938f32">afficher_mains_cachee</a> (void)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">procédure qui affiche la main de la banque y compris la mains cachée <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a288bf9aa7e231c3aca622c2860219941">donner_valeur_carte</a> (short player, short carte, short score)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a4a20e33a58c74c84a6793208be3bc5d1">evaluer_score</a> (short player, short carte_recue, short *score)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">fonction qui met à jour le score du joueur ( banque ou joueur ) passé en paramètre en fonction de la carte reçue  <a href="#a4a20e33a58c74c84a6793208be3bc5d1"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a4afa838396554698e0668c1a09161ebc">cartes</a> [52]</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">structure de données utilisé pour le jeu black jack  <a href="#a4afa838396554698e0668c1a09161ebc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f90764a2168917eb0c360c066a47b02"></a><!-- doxytag: member="fonction.h::nb_as_joueur" ref="a0f90764a2168917eb0c360c066a47b02" args="" -->
+short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a0f90764a2168917eb0c360c066a47b02">nb_as_joueur</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">variable qui permet de stocker le nombre d'as du joueur <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e7bc0727efe41c6056e4308041f7b88"></a><!-- doxytag: member="fonction.h::nb_as_banque" ref="a9e7bc0727efe41c6056e4308041f7b88" args="" -->
+short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction_8h.html#a9e7bc0727efe41c6056e4308041f7b88">nb_as_banque</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">variable qui permet de stocker le nombre d'as de la banque <br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>ce fichier d'en-tete contient les en-tete des fonctions définies dans le fichier source <a class="el" href="fonction_8c.html" title="ce fichier source contient les définitions des fonctions qui seront appelés par le programme principa...">fonction.c</a> </p>
+<p>ce fichier contient aussi la déclaration des constantes symboliques, des variables globales et des structures de données utilisées (tableau) </p>
+</div><hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="aa6a8403ad0170c8f0a3ccbb6f982f36d"></a><!-- doxytag: member="fonction.h::BANQUE" ref="aa6a8403ad0170c8f0a3ccbb6f982f36d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#aa6a8403ad0170c8f0a3ccbb6f982f36d">BANQUE</a>&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>représente une carte qui a été tirée par la banque et visible par le joueur </p>
+<p>sa valeur dans le tableau cartes est 1 </p>
+
+</div>
+</div>
+<a class="anchor" id="a06f74699ca6f213b3297382d27152578"></a><!-- doxytag: member="fonction.h::BANQUE_CACHEE" ref="a06f74699ca6f213b3297382d27152578" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#a06f74699ca6f213b3297382d27152578">BANQUE_CACHEE</a>&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>représente une carte qui a été tirée par la banque et non visible par le joueur </p>
+<p>sa valeur dans le tableau cartes est 3 </p>
+
+</div>
+</div>
+<a class="anchor" id="adaac26fcb2ef9b0c98dbcd70395f81d4"></a><!-- doxytag: member="fonction.h::DEB_CARREAUX" ref="adaac26fcb2ef9b0c98dbcd70395f81d4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#adaac26fcb2ef9b0c98dbcd70395f81d4">DEB_CARREAUX</a>&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice du début des cartes de couleur carreaux </p>
+<p>permet d'identifier dans quelle case se situe l'as de carreaux dans le tableau des cartes </p>
+
+</div>
+</div>
+<a class="anchor" id="ab3167868edabf23ce42007cfa46f0a34"></a><!-- doxytag: member="fonction.h::DEB_COEURS" ref="ab3167868edabf23ce42007cfa46f0a34" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#ab3167868edabf23ce42007cfa46f0a34">DEB_COEURS</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice du début des cartes de couleur coeur </p>
+<p>permet d'identifier dans quelle case se situe l'as de coeur dans le tableau des cartes </p>
+
+</div>
+</div>
+<a class="anchor" id="af174177234917e71a4ddc296b65bf836"></a><!-- doxytag: member="fonction.h::DEB_PIQUES" ref="af174177234917e71a4ddc296b65bf836" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#af174177234917e71a4ddc296b65bf836">DEB_PIQUES</a>&#160;&#160;&#160;26</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice du début des cartes de couleur piques </p>
+<p>permet d'identifier dans quelle case se situe l'as de piques dans le tableau des cartes </p>
+
+</div>
+</div>
+<a class="anchor" id="a776e9059fbac10978154260ee7ebfe08"></a><!-- doxytag: member="fonction.h::DEB_TREFLES" ref="a776e9059fbac10978154260ee7ebfe08" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#a776e9059fbac10978154260ee7ebfe08">DEB_TREFLES</a>&#160;&#160;&#160;39</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice du début des cartes de couleur trefles </p>
+<p>permet d'identifier dans quelle case se situe l'as de trefles dans le tableau des cartes </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e5f41c3b532ee5dbea0aa4abcad0c5c"></a><!-- doxytag: member="fonction.h::FIN_CARREAUX" ref="a5e5f41c3b532ee5dbea0aa4abcad0c5c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#a5e5f41c3b532ee5dbea0aa4abcad0c5c">FIN_CARREAUX</a>&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice de fin des cartes de couleur carreaux </p>
+<p>permet d'identifier dans quelle case se situe le roi de carreaux dans le tableau des cartes </p>
+
+</div>
+</div>
+<a class="anchor" id="a907dc60a26479ff6bf53792573e4bafa"></a><!-- doxytag: member="fonction.h::FIN_COEURS" ref="a907dc60a26479ff6bf53792573e4bafa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#a907dc60a26479ff6bf53792573e4bafa">FIN_COEURS</a>&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice de fin des cartes de couleur coeur </p>
+<p>permet d'identifier dans quelle case se situe le roi de coeur dans le tableau des cartes </p>
+
+</div>
+</div>
+<a class="anchor" id="a59b61abc1fe046e0165a739067b1854b"></a><!-- doxytag: member="fonction.h::FIN_PIQUES" ref="a59b61abc1fe046e0165a739067b1854b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#a59b61abc1fe046e0165a739067b1854b">FIN_PIQUES</a>&#160;&#160;&#160;38</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice de fin des cartes de couleur piques </p>
+<p>permet d'identifier dans quelle case se situe le roi de pique dans le tableau des cartes </p>
+
+</div>
+</div>
+<a class="anchor" id="aef89a2a14b5ec6b3999fed241935ca9d"></a><!-- doxytag: member="fonction.h::FIN_TREFLES" ref="aef89a2a14b5ec6b3999fed241935ca9d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#aef89a2a14b5ec6b3999fed241935ca9d">FIN_TREFLES</a>&#160;&#160;&#160;51</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice de fin des cartes de couleur trefles </p>
+<p>permet d'identifier dans quelle case se situe le roi de trefles dans le tableau des cartes </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f907d351a198b9a0405ce45155625dc"></a><!-- doxytag: member="fonction.h::JOUEUR" ref="a7f907d351a198b9a0405ce45155625dc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#a7f907d351a198b9a0405ce45155625dc">JOUEUR</a>&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>représente une carte qui a été tirée par le joueur </p>
+<p>sa valeur dans le tableau cartes est 2 </p>
+
+</div>
+</div>
+<a class="anchor" id="a508cc209fbc99ea975d1c1ecb5f1c6fe"></a><!-- doxytag: member="fonction.h::LIBRE" ref="a508cc209fbc99ea975d1c1ecb5f1c6fe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="fonction_8h.html#a508cc209fbc99ea975d1c1ecb5f1c6fe">LIBRE</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>représente une carte qui n'a pas été tirée </p>
+<p>sa valeur dans le tableau cartes est 0 </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a889d9fb67e023d6b9aaa5819f007529c"></a><!-- doxytag: member="fonction.h::affiche_tab" ref="a889d9fb67e023d6b9aaa5819f007529c" args="(short mat[52])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="fonction_8h.html#a889d9fb67e023d6b9aaa5819f007529c">affiche_tab</a> </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>mat</em>[52]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>procédure qui affiche le tableau cartes </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat[52]</td><td>tableau cartes à 52 cases </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa59cf3010d2ca3d7dd3f9628e6a7bc72"></a><!-- doxytag: member="fonction.h::afficher_carte" ref="aa59cf3010d2ca3d7dd3f9628e6a7bc72" args="(short num)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="fonction_8h.html#aa59cf3010d2ca3d7dd3f9628e6a7bc72">afficher_carte</a> </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>procédure qui affiche la valeur et la couleur d'une carte à partir de son positionnement dans le tableau cartes </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>numéro correspondant à une carte dans le tableau cartes </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; x reçoit le numéro de la carte ( compris entre 0 et 12 ) à afficher </p>
+
+</div>
+</div>
+<a class="anchor" id="a4e45c4378ccb34b5c5db0ec341317dc4"></a><!-- doxytag: member="fonction.h::afficher_mains" ref="a4e45c4378ccb34b5c5db0ec341317dc4" args="(short player)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="fonction_8h.html#a4e45c4378ccb34b5c5db0ec341317dc4">afficher_mains</a> </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>procédure qui affiche la main d'un joueur ( banque ou joueur ) passé en paramètre sans afficher la carte cahée de la banque </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>le joueur dont on veut afficher la main </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a288bf9aa7e231c3aca622c2860219941"></a><!-- doxytag: member="fonction.h::donner_valeur_carte" ref="a288bf9aa7e231c3aca622c2860219941" args="(short player, short carte, short score)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short <a class="el" href="fonction_8h.html#a288bf9aa7e231c3aca622c2860219941">donner_valeur_carte</a> </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>carte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>score</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>&lt; la variable x reçoit le numéro de la carte ( compris entre 0 et 12 ) pour laquelle on souahite attribuer une valeur </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a20e33a58c74c84a6793208be3bc5d1"></a><!-- doxytag: member="fonction.h::evaluer_score" ref="a4a20e33a58c74c84a6793208be3bc5d1" args="(short player, short carte_recue, short *score)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short <a class="el" href="fonction_8h.html#a4a20e33a58c74c84a6793208be3bc5d1">evaluer_score</a> </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>carte_recue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short *&#160;</td>
+          <td class="paramname"><em>score</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>fonction qui met à jour le score du joueur ( banque ou joueur ) passé en paramètre en fonction de la carte reçue </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>joueur ( banque ou joueur ) pour lequel en mettra à jour le score </td></tr>
+    <tr><td class="paramname">carte_reçue</td><td>numéro qui représente une carte dans le tableau cartes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>le nouveau score du joueur </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a77c7f36cb1e69095e9014759aad8d94c"></a><!-- doxytag: member="fonction.h::tirer_carte" ref="a77c7f36cb1e69095e9014759aad8d94c" args="(short player)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short <a class="el" href="fonction_8h.html#a77c7f36cb1e69095e9014759aad8d94c">tirer_carte</a> </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>cette fonction tire aléatoirement un entier entre 0 et 51 qui correspond à une carte </p>
+<p>elle associe le player passé en paramètre (banque,joueur,banque_cachee) à cette carte dans le tableau cartes </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>joueur qui sera associé à la carte tirée au hazard </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>l'entier (ou la carte) tiré au hazard </dd></dl>
+<p>&lt;variable qui va recevoir le numéro de la carte tirée aléatoirement </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a4afa838396554698e0668c1a09161ebc"></a><!-- doxytag: member="fonction.h::cartes" ref="a4afa838396554698e0668c1a09161ebc" args="[52]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short <a class="el" href="fonction_8h.html#a4afa838396554698e0668c1a09161ebc">cartes</a>[52]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>structure de données utilisé pour le jeu black jack </p>
+<p>tableau de 52 cases. chaque case représente une carte de jeu. chaque case du tableau peut avoir 4 valeurs possibles : 0,1,2 ou 3. la valeur d'une case vaut 0 si la carte correspondante n'a toujours pas été tirée la valeur d'une case vaut 1 si la carte correspondante a été tirée par la banque et que cette carte est visible par le joueur la valeur d'une case vaut 2 si la carte correspondante a été tirée par le joueur la valeur d'une case vaut 3 si la carte correspondante a été tirée par la banque et que cette carte n'est pas visible par le joueur </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi Novembre 28 2014 00:54:34 pour BLACK JACK par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

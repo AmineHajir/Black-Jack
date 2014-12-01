@@ -1,0 +1,267 @@
+\hypertarget{fonction_8h}{\section{\-Référence du fichier fonction.\-h}
+\label{fonction_8h}\index{fonction.\-h@{fonction.\-h}}
+}
+
+
+ce fichier d'en-\/tete contient les en-\/tete des fonctions définies dans le fichier source \hyperlink{fonction_8c}{fonction.\-c}  
+
+
+\subsection*{\-Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{fonction_8h_a508cc209fbc99ea975d1c1ecb5f1c6fe}{\-L\-I\-B\-R\-E}~0
+\begin{DoxyCompactList}\small\item\em représente une carte qui n'a pas été tirée \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_aa6a8403ad0170c8f0a3ccbb6f982f36d}{\-B\-A\-N\-Q\-U\-E}~1
+\begin{DoxyCompactList}\small\item\em représente une carte qui a été tirée par la banque et visible par le joueur \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_a7f907d351a198b9a0405ce45155625dc}{\-J\-O\-U\-E\-U\-R}~2
+\begin{DoxyCompactList}\small\item\em représente une carte qui a été tirée par le joueur \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_a06f74699ca6f213b3297382d27152578}{\-B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}~3
+\begin{DoxyCompactList}\small\item\em représente une carte qui a été tirée par la banque et non visible par le joueur \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_ab3167868edabf23ce42007cfa46f0a34}{\-D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}~0
+\begin{DoxyCompactList}\small\item\em indice du début des cartes de couleur coeur \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_a907dc60a26479ff6bf53792573e4bafa}{\-F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}~12
+\begin{DoxyCompactList}\small\item\em indice de fin des cartes de couleur coeur \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_adaac26fcb2ef9b0c98dbcd70395f81d4}{\-D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}~13
+\begin{DoxyCompactList}\small\item\em indice du début des cartes de couleur carreaux \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_a5e5f41c3b532ee5dbea0aa4abcad0c5c}{\-F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}~25
+\begin{DoxyCompactList}\small\item\em indice de fin des cartes de couleur carreaux \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_af174177234917e71a4ddc296b65bf836}{\-D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}~26
+\begin{DoxyCompactList}\small\item\em indice du début des cartes de couleur piques \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_a59b61abc1fe046e0165a739067b1854b}{\-F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}~38
+\begin{DoxyCompactList}\small\item\em indice de fin des cartes de couleur piques \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_a776e9059fbac10978154260ee7ebfe08}{\-D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}~39
+\begin{DoxyCompactList}\small\item\em indice du début des cartes de couleur trefles \end{DoxyCompactList}\item 
+\#define \hyperlink{fonction_8h_aef89a2a14b5ec6b3999fed241935ca9d}{\-F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}~51
+\begin{DoxyCompactList}\small\item\em indice de fin des cartes de couleur trefles \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+short \hyperlink{fonction_8h_a77c7f36cb1e69095e9014759aad8d94c}{tirer\-\_\-carte} (short player)
+\begin{DoxyCompactList}\small\item\em cette fonction tire aléatoirement un entier entre 0 et 51 qui correspond à une carte \end{DoxyCompactList}\item 
+void \hyperlink{fonction_8h_a889d9fb67e023d6b9aaa5819f007529c}{affiche\-\_\-tab} (short mat\mbox{[}52\mbox{]})
+\begin{DoxyCompactList}\small\item\em procédure qui affiche le tableau cartes \end{DoxyCompactList}\item 
+void \hyperlink{fonction_8h_aa59cf3010d2ca3d7dd3f9628e6a7bc72}{afficher\-\_\-carte} (short num)
+\begin{DoxyCompactList}\small\item\em procédure qui affiche la valeur et la couleur d'une carte à partir de son positionnement dans le tableau cartes \end{DoxyCompactList}\item 
+void \hyperlink{fonction_8h_a4e45c4378ccb34b5c5db0ec341317dc4}{afficher\-\_\-mains} (short player)
+\begin{DoxyCompactList}\small\item\em procédure qui affiche la main d'un joueur ( banque ou joueur ) passé en paramètre sans afficher la carte cahée de la banque \end{DoxyCompactList}\item 
+\hypertarget{fonction_8h_acf11c634273c349b6f9b2ce620938f32}{void \hyperlink{fonction_8h_acf11c634273c349b6f9b2ce620938f32}{afficher\-\_\-mains\-\_\-cachee} (void)}\label{fonction_8h_acf11c634273c349b6f9b2ce620938f32}
+
+\begin{DoxyCompactList}\small\item\em procédure qui affiche la main de la banque y compris la mains cachée \end{DoxyCompactList}\item 
+short \hyperlink{fonction_8h_a288bf9aa7e231c3aca622c2860219941}{donner\-\_\-valeur\-\_\-carte} (short player, short carte, short score)
+\item 
+short \hyperlink{fonction_8h_a4a20e33a58c74c84a6793208be3bc5d1}{evaluer\-\_\-score} (short player, short carte\-\_\-recue, short $\ast$score)
+\begin{DoxyCompactList}\small\item\em fonction qui met à jour le score du joueur ( banque ou joueur ) passé en paramètre en fonction de la carte reçue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+short \hyperlink{fonction_8h_a4afa838396554698e0668c1a09161ebc}{cartes} \mbox{[}52\mbox{]}
+\begin{DoxyCompactList}\small\item\em structure de données utilisé pour le jeu black jack \end{DoxyCompactList}\item 
+\hypertarget{fonction_8h_a0f90764a2168917eb0c360c066a47b02}{short \hyperlink{fonction_8h_a0f90764a2168917eb0c360c066a47b02}{nb\-\_\-as\-\_\-joueur}}\label{fonction_8h_a0f90764a2168917eb0c360c066a47b02}
+
+\begin{DoxyCompactList}\small\item\em variable qui permet de stocker le nombre d'as du joueur \end{DoxyCompactList}\item 
+\hypertarget{fonction_8h_a9e7bc0727efe41c6056e4308041f7b88}{short \hyperlink{fonction_8h_a9e7bc0727efe41c6056e4308041f7b88}{nb\-\_\-as\-\_\-banque}}\label{fonction_8h_a9e7bc0727efe41c6056e4308041f7b88}
+
+\begin{DoxyCompactList}\small\item\em variable qui permet de stocker le nombre d'as de la banque \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+ce fichier d'en-\/tete contient les en-\/tete des fonctions définies dans le fichier source \hyperlink{fonction_8c}{fonction.\-c} ce fichier contient aussi la déclaration des constantes symboliques, des variables globales et des structures de données utilisées (tableau) 
+
+\subsection{\-Documentation des macros}
+\hypertarget{fonction_8h_aa6a8403ad0170c8f0a3ccbb6f982f36d}{\index{fonction.\-h@{fonction.\-h}!\-B\-A\-N\-Q\-U\-E@{\-B\-A\-N\-Q\-U\-E}}
+\index{\-B\-A\-N\-Q\-U\-E@{\-B\-A\-N\-Q\-U\-E}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-B\-A\-N\-Q\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-A\-N\-Q\-U\-E}~1}}\label{fonction_8h_aa6a8403ad0170c8f0a3ccbb6f982f36d}
+
+
+représente une carte qui a été tirée par la banque et visible par le joueur 
+
+sa valeur dans le tableau cartes est 1 \hypertarget{fonction_8h_a06f74699ca6f213b3297382d27152578}{\index{fonction.\-h@{fonction.\-h}!\-B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E@{\-B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}}
+\index{\-B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E@{\-B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}~3}}\label{fonction_8h_a06f74699ca6f213b3297382d27152578}
+
+
+représente une carte qui a été tirée par la banque et non visible par le joueur 
+
+sa valeur dans le tableau cartes est 3 \hypertarget{fonction_8h_adaac26fcb2ef9b0c98dbcd70395f81d4}{\index{fonction.\-h@{fonction.\-h}!\-D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X@{\-D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}}
+\index{\-D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X@{\-D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}~13}}\label{fonction_8h_adaac26fcb2ef9b0c98dbcd70395f81d4}
+
+
+indice du début des cartes de couleur carreaux 
+
+permet d'identifier dans quelle case se situe l'as de carreaux dans le tableau des cartes \hypertarget{fonction_8h_ab3167868edabf23ce42007cfa46f0a34}{\index{fonction.\-h@{fonction.\-h}!\-D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S@{\-D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}}
+\index{\-D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S@{\-D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}~0}}\label{fonction_8h_ab3167868edabf23ce42007cfa46f0a34}
+
+
+indice du début des cartes de couleur coeur 
+
+permet d'identifier dans quelle case se situe l'as de coeur dans le tableau des cartes \hypertarget{fonction_8h_af174177234917e71a4ddc296b65bf836}{\index{fonction.\-h@{fonction.\-h}!\-D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S@{\-D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}}
+\index{\-D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S@{\-D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}~26}}\label{fonction_8h_af174177234917e71a4ddc296b65bf836}
+
+
+indice du début des cartes de couleur piques 
+
+permet d'identifier dans quelle case se situe l'as de piques dans le tableau des cartes \hypertarget{fonction_8h_a776e9059fbac10978154260ee7ebfe08}{\index{fonction.\-h@{fonction.\-h}!\-D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S@{\-D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}}
+\index{\-D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S@{\-D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}~39}}\label{fonction_8h_a776e9059fbac10978154260ee7ebfe08}
+
+
+indice du début des cartes de couleur trefles 
+
+permet d'identifier dans quelle case se situe l'as de trefles dans le tableau des cartes \hypertarget{fonction_8h_a5e5f41c3b532ee5dbea0aa4abcad0c5c}{\index{fonction.\-h@{fonction.\-h}!\-F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X@{\-F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}}
+\index{\-F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X@{\-F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}~25}}\label{fonction_8h_a5e5f41c3b532ee5dbea0aa4abcad0c5c}
+
+
+indice de fin des cartes de couleur carreaux 
+
+permet d'identifier dans quelle case se situe le roi de carreaux dans le tableau des cartes \hypertarget{fonction_8h_a907dc60a26479ff6bf53792573e4bafa}{\index{fonction.\-h@{fonction.\-h}!\-F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S@{\-F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}}
+\index{\-F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S@{\-F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}~12}}\label{fonction_8h_a907dc60a26479ff6bf53792573e4bafa}
+
+
+indice de fin des cartes de couleur coeur 
+
+permet d'identifier dans quelle case se situe le roi de coeur dans le tableau des cartes \hypertarget{fonction_8h_a59b61abc1fe046e0165a739067b1854b}{\index{fonction.\-h@{fonction.\-h}!\-F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S@{\-F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}}
+\index{\-F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S@{\-F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}~38}}\label{fonction_8h_a59b61abc1fe046e0165a739067b1854b}
+
+
+indice de fin des cartes de couleur piques 
+
+permet d'identifier dans quelle case se situe le roi de pique dans le tableau des cartes \hypertarget{fonction_8h_aef89a2a14b5ec6b3999fed241935ca9d}{\index{fonction.\-h@{fonction.\-h}!\-F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S@{\-F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}}
+\index{\-F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S@{\-F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}~51}}\label{fonction_8h_aef89a2a14b5ec6b3999fed241935ca9d}
+
+
+indice de fin des cartes de couleur trefles 
+
+permet d'identifier dans quelle case se situe le roi de trefles dans le tableau des cartes \hypertarget{fonction_8h_a7f907d351a198b9a0405ce45155625dc}{\index{fonction.\-h@{fonction.\-h}!\-J\-O\-U\-E\-U\-R@{\-J\-O\-U\-E\-U\-R}}
+\index{\-J\-O\-U\-E\-U\-R@{\-J\-O\-U\-E\-U\-R}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-J\-O\-U\-E\-U\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-J\-O\-U\-E\-U\-R}~2}}\label{fonction_8h_a7f907d351a198b9a0405ce45155625dc}
+
+
+représente une carte qui a été tirée par le joueur 
+
+sa valeur dans le tableau cartes est 2 \hypertarget{fonction_8h_a508cc209fbc99ea975d1c1ecb5f1c6fe}{\index{fonction.\-h@{fonction.\-h}!\-L\-I\-B\-R\-E@{\-L\-I\-B\-R\-E}}
+\index{\-L\-I\-B\-R\-E@{\-L\-I\-B\-R\-E}!fonction.h@{fonction.\-h}}
+\subsubsection[{\-L\-I\-B\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-I\-B\-R\-E}~0}}\label{fonction_8h_a508cc209fbc99ea975d1c1ecb5f1c6fe}
+
+
+représente une carte qui n'a pas été tirée 
+
+sa valeur dans le tableau cartes est 0 
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{fonction_8h_a889d9fb67e023d6b9aaa5819f007529c}{\index{fonction.\-h@{fonction.\-h}!affiche\-\_\-tab@{affiche\-\_\-tab}}
+\index{affiche\-\_\-tab@{affiche\-\_\-tab}!fonction.h@{fonction.\-h}}
+\subsubsection[{affiche\-\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf affiche\-\_\-tab} (
+\begin{DoxyParamCaption}
+\item[{short}]{mat\mbox{[}52\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{fonction_8h_a889d9fb67e023d6b9aaa5819f007529c}
+
+
+procédure qui affiche le tableau cartes 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em mat\mbox{[}52\mbox{]}} & tableau cartes à 52 cases \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonction_8h_aa59cf3010d2ca3d7dd3f9628e6a7bc72}{\index{fonction.\-h@{fonction.\-h}!afficher\-\_\-carte@{afficher\-\_\-carte}}
+\index{afficher\-\_\-carte@{afficher\-\_\-carte}!fonction.h@{fonction.\-h}}
+\subsubsection[{afficher\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf afficher\-\_\-carte} (
+\begin{DoxyParamCaption}
+\item[{short}]{num}
+\end{DoxyParamCaption}
+)}}\label{fonction_8h_aa59cf3010d2ca3d7dd3f9628e6a7bc72}
+
+
+procédure qui affiche la valeur et la couleur d'une carte à partir de son positionnement dans le tableau cartes 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em num} & numéro correspondant à une carte dans le tableau cartes \\
+\hline
+\end{DoxyParams}
+$<$ x reçoit le numéro de la carte ( compris entre 0 et 12 ) à afficher \hypertarget{fonction_8h_a4e45c4378ccb34b5c5db0ec341317dc4}{\index{fonction.\-h@{fonction.\-h}!afficher\-\_\-mains@{afficher\-\_\-mains}}
+\index{afficher\-\_\-mains@{afficher\-\_\-mains}!fonction.h@{fonction.\-h}}
+\subsubsection[{afficher\-\_\-mains}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf afficher\-\_\-mains} (
+\begin{DoxyParamCaption}
+\item[{short}]{player}
+\end{DoxyParamCaption}
+)}}\label{fonction_8h_a4e45c4378ccb34b5c5db0ec341317dc4}
+
+
+procédure qui affiche la main d'un joueur ( banque ou joueur ) passé en paramètre sans afficher la carte cahée de la banque 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em player} & le joueur dont on veut afficher la main \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonction_8h_a288bf9aa7e231c3aca622c2860219941}{\index{fonction.\-h@{fonction.\-h}!donner\-\_\-valeur\-\_\-carte@{donner\-\_\-valeur\-\_\-carte}}
+\index{donner\-\_\-valeur\-\_\-carte@{donner\-\_\-valeur\-\_\-carte}!fonction.h@{fonction.\-h}}
+\subsubsection[{donner\-\_\-valeur\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf donner\-\_\-valeur\-\_\-carte} (
+\begin{DoxyParamCaption}
+\item[{short}]{player, }
+\item[{short}]{carte, }
+\item[{short}]{score}
+\end{DoxyParamCaption}
+)}}\label{fonction_8h_a288bf9aa7e231c3aca622c2860219941}
+$<$ la variable x reçoit le numéro de la carte ( compris entre 0 et 12 ) pour laquelle on souahite attribuer une valeur \hypertarget{fonction_8h_a4a20e33a58c74c84a6793208be3bc5d1}{\index{fonction.\-h@{fonction.\-h}!evaluer\-\_\-score@{evaluer\-\_\-score}}
+\index{evaluer\-\_\-score@{evaluer\-\_\-score}!fonction.h@{fonction.\-h}}
+\subsubsection[{evaluer\-\_\-score}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf evaluer\-\_\-score} (
+\begin{DoxyParamCaption}
+\item[{short}]{player, }
+\item[{short}]{carte\-\_\-recue, }
+\item[{short $\ast$}]{score}
+\end{DoxyParamCaption}
+)}}\label{fonction_8h_a4a20e33a58c74c84a6793208be3bc5d1}
+
+
+fonction qui met à jour le score du joueur ( banque ou joueur ) passé en paramètre en fonction de la carte reçue 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em player} & joueur ( banque ou joueur ) pour lequel en mettra à jour le score \\
+\hline
+{\em carte\-\_\-reçue} & numéro qui représente une carte dans le tableau cartes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+le nouveau score du joueur 
+\end{DoxyReturn}
+\hypertarget{fonction_8h_a77c7f36cb1e69095e9014759aad8d94c}{\index{fonction.\-h@{fonction.\-h}!tirer\-\_\-carte@{tirer\-\_\-carte}}
+\index{tirer\-\_\-carte@{tirer\-\_\-carte}!fonction.h@{fonction.\-h}}
+\subsubsection[{tirer\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf tirer\-\_\-carte} (
+\begin{DoxyParamCaption}
+\item[{short}]{player}
+\end{DoxyParamCaption}
+)}}\label{fonction_8h_a77c7f36cb1e69095e9014759aad8d94c}
+
+
+cette fonction tire aléatoirement un entier entre 0 et 51 qui correspond à une carte 
+
+elle associe le player passé en paramètre (banque,joueur,banque\-\_\-cachee) à cette carte dans le tableau cartes 
+\begin{DoxyParams}{\-Paramètres}
+{\em player} & joueur qui sera associé à la carte tirée au hazard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+l'entier (ou la carte) tiré au hazard 
+\end{DoxyReturn}
+$<$variable qui va recevoir le numéro de la carte tirée aléatoirement 
+
+\subsection{\-Documentation des variables}
+\hypertarget{fonction_8h_a4afa838396554698e0668c1a09161ebc}{\index{fonction.\-h@{fonction.\-h}!cartes@{cartes}}
+\index{cartes@{cartes}!fonction.h@{fonction.\-h}}
+\subsubsection[{cartes}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf cartes}\mbox{[}52\mbox{]}}}\label{fonction_8h_a4afa838396554698e0668c1a09161ebc}
+
+
+structure de données utilisé pour le jeu black jack 
+
+tableau de 52 cases. chaque case représente une carte de jeu. chaque case du tableau peut avoir 4 valeurs possibles \-: 0,1,2 ou 3. la valeur d'une case vaut 0 si la carte correspondante n'a toujours pas été tirée la valeur d'une case vaut 1 si la carte correspondante a été tirée par la banque et que cette carte est visible par le joueur la valeur d'une case vaut 2 si la carte correspondante a été tirée par le joueur la valeur d'une case vaut 3 si la carte correspondante a été tirée par la banque et que cette carte n'est pas visible par le joueur 
