@@ -3,6 +3,7 @@
 #include<time.h>
 #include "fonction.h"
 
+
 /**
  * \file fonction.c
  * \brief ce fichier source contient les définitions des fonctions qui seront appelés par le programme principale situé dans le fichier source bj.c
@@ -53,6 +54,7 @@ short tirer_carte(short player)
  * \brief procédure qui affiche la valeur et la couleur d'une carte à partir de son positionnement dans le tableau cartes 
  * \param num numéro correspondant à une carte dans le tableau cartes
 */
+	
 	
 void afficher_carte(short num)
 {
