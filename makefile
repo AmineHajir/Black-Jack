@@ -23,3 +23,4 @@ fonction.o : fonction.c fonction.h
 	
 clean:
 	rm -f *.o bj test
+
