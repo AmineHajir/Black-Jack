@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "fonction.h"
 
+
 int main()
 {
 	/*short carte_cachee,carte_banque,carte1_joueur,carte2_joueur,carte_recue;
