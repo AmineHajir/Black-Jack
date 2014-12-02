@@ -15,7 +15,7 @@
 
 ##Importation du projet
 
-git clone https://github.com/Youss7/Black-Jack; cd Black-Jack
+git clone https://github.com/amineha/Black-Jack; cd Black-Jack
 
 
 
